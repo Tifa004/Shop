@@ -52,7 +52,7 @@ const Cart = () => {
                   <button
                     className="change-quantity-button"
                     onClick={() => {
-                      if (item.quantity > 0) {
+                      if (item.quantity > 1) {
                         setCart((prevCart) =>
                           prevCart.map((cartItem) =>
                             cartItem.id === item.id
@@ -61,6 +61,8 @@ const Cart = () => {
                           )
                         );
                         setAmount((prev) => prev - 1);
+                      } else {
+                        removeItem(item.id);
                       }
                     }}
                   >
