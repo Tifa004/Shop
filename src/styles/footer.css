@@ -1,0 +1,46 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  background-color: #1f2937;
+  color: #fff;
+  padding: 20px 40px;
+  margin-top: 50px;
+  border-top: 1px solid #444;
+  font-family: "Poppins", sans-serif;
+}
+
+.contact-info h4 {
+  margin: 0 0 5px 0;
+  font-size: 1.2rem;
+}
+
+.contact-info p {
+  margin: 3px 0;
+}
+
+.footer-shopify img {
+  width: 200px;
+}
+
+@media (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 20px;
+    gap: 15px;
+  }
+
+  .contact-info h4 {
+    font-size: 1rem;
+  }
+
+  .contact-info p {
+    font-size: 0.9rem;
+  }
+
+  .footer-shopify img {
+    width: 120px;
+  }
+}

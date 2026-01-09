@@ -1,0 +1,58 @@
+* {
+  text-decoration: none;
+}
+
+body {
+  background-color: antiquewhite;
+}
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 19px;
+  align-items: center;
+  padding: 14px 32px;
+  background-color: #1f2937;
+  color: white;
+}
+
+.nav-left,
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav-left a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-left a:hover {
+  text-decoration: underline;
+}
+
+.profile-pic {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.cart-icon {
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: white;
+}
+
+.main-content {
+  flex: 1;
+  padding: 14px 32px;
+}
